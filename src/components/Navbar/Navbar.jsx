@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import MobileNav from './MobileNav/MobileNav';
+import Skills from '../Skills/Skills';
 
 const Navbar = () => {
 
@@ -14,26 +15,25 @@ const Navbar = () => {
     <>
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
-
       <nav className='nav-wrapper'>
         <div className="nav-content">
           <h2>wlanHan.</h2>
 
           <ul>
             <li>
-              <a className='menu-item'>AnaSayfa</a>
+              <a href='#' className='menu-item'>AnaSayfa</a>
             </li>
             <li>
-              <a className='menu-item'>Yetenekler</a>
+              <a href='#skills' className='menu-item'>Yetenekler</a>
             </li>
             <li>
-              <a className='menu-item'>İş Tecrübesi</a>
+              <a href='#work-experience' className='menu-item'>İş Tecrübesi</a>
             </li>
             <li>
-              <a className='menu-item'>İletişime Geçin</a>
+              <a href='#contact-me' className='menu-item'>İletişime Geçin</a>
             </li>
 
-            <butto className="contact-btn " onClick={() => { }}> Benimle Çalışın </butto>
+            <button href='#contact-me' className="contact-btn " onClick={() => { }}> Benimle Çalışın </button>
 
           </ul>
 

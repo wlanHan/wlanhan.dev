@@ -3,6 +3,7 @@ import './Skills.css'
 import { SKILLS } from '../../utils/data'
 import SkillCard from './SkillCard/SkillCard'
 import SkillsInfoCard from './SkillsInfoCard/SkillsInfoCard'
+import Navbar from '../Navbar/Navbar'
 const Skills = () => {
 
     const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
@@ -15,8 +16,7 @@ const Skills = () => {
     return (
 
         <>
-
-            <section className='skills-container'>
+            <section id='skills' className='skills-container'>
                 <h5>İş Becerileri</h5>
 
                 <div className='skills-content'>
